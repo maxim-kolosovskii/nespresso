@@ -29,10 +29,19 @@ body {
 }
 
 .container {
+  box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
   transition: max-width $transition-duration $transition-timing-function;
 
+  @include media-netbook-mx {
+    padding-left: 15px;
+    padding-right: 15px
+  }
+  @include media-tablet-v-mx {
+    padding-left: 12px;
+    padding-right: 12px
+  }
   @media only screen and (max-width: 399px) {
     padding: 0 25px;
   }

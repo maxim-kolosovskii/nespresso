@@ -116,9 +116,18 @@ body {
   width: 100%; }
 
 .container {
+  box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
   transition: max-width 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95); }
+  @media screen and (max-width: 1199px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media screen and (max-width: 991px) {
+    .container {
+      padding-left: 12px;
+      padding-right: 12px; } }
   @media only screen and (max-width: 399px) {
     .container {
       padding: 0 25px; } }
@@ -338,10 +347,10 @@ button {
 .btn--jaune {
   background-color: #febf00;
   color: inherit; }
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 1023px) {
     .btn--jaune {
       margin-bottom: 6vh; } }
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 1024px) {
     .btn--jaune {
       margin-bottom: 11vh; } }
 

@@ -96,10 +96,10 @@ button {
   background-color: $color-yellow;
   color: inherit;
 
-  @include media-phone-mx {
+  @include media-tablet-h-mx {
     margin-bottom: 6vh;
   }
-  @include media-phone-mn {
+  @include media-tablet-h-mn {
     margin-bottom: 11vh;
   }
 }

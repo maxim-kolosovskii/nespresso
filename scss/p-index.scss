@@ -36,35 +36,15 @@ General Landing styles
   @include media-phablet-mn {
     letter-spacing: 0.2em;
   }
-
-  //@include media-phablet-mx {
-  //  font-size: 1.625rem; //26px;
-  //  margin-bottom: 25px;
-  //}
-  //@include media-phablet-mn {
-  //  font-size: 1.875rem; //30px
-  //  margin-bottom: 4vh;
-  //}
-  //@include media-netbook-mn {
-  //  font-size: 2.25rem; //36px
-  //  margin-bottom: 5vh;
-  //}
-  //@include media-laptop-mn {
-  //  font-size: 2.5rem; //40px
-  //  margin-bottom: 5.5vh;
-  //}
 }
 
 
 
 /* Top section */
 .section--top {
-  //background-image: url("../img/bg-top-min.jpg");
-  //background-repeat: no-repeat;
   padding: 7vh 0 0;
   text-align: center;
   z-index: 1;
-  //display: none;
 
   *::selection {
     background: #fff;
@@ -72,22 +52,22 @@ General Landing styles
   }
 
   @include media-phablet-mn {
-    min-height: 65vh;
+    min-height: 480px;
   }
   @media only screen and (min-width: 880px) {
-    min-height: 70vh;
+    min-height: 530px;
   }
   @include media-tablet-v-mn {
-    min-height: 80vh;
+    min-height: 620px;
   }
   @media only screen and (min-width: 1150px) {
-    min-height: 88vh;
+    min-height: 660px;
   }
   @include media-netbook-mn {
-    min-height: 96vh;
+    min-height: 730px;
   }
   @include media-laptop-mn {
-    min-height: 98vh;
+    min-height: 787px;
   }
 
   h1 {
@@ -124,38 +104,13 @@ General Landing styles
     animation: slideTop .3s cubic-bezier(0.25, 0.45, 0.45, 0.95) both;
   }
 
-  //@include media-phablet-mx {
-  //  background-position: 50% 0;
-  //  background-size: 300%;
-  //}
-  //@include media-phone-mx {
-  //  background-size: 530%;
-  //}
-  //@media only screen and (max-width: 380px) {
-  //  background-size: 1000%;
-  //}
-  //@include media-phablet-mn {
-  //  background-position: 70% 0;
-  //  background-size: 180%;
-  //}
-  //@include media-phablet-tablet-h {
-  //  background-size: 250%;
-  //}
-  //@include media-laptop-mn {
-  //  background-position: 0 0;
-  //  background-size: auto;
-  //}
-  //@media only screen and (min-width: 1100px) and (max-width: 1440px) {
-  //  background-size: 100%;
-  //}
-
   IMG {
+    box-sizing: border-box;
     max-width: 100%;
+    vertical-align: middle;
 
     @include media-phablet-mn {
       position: absolute;
-      //top: 0;
-      //right: 0;
       bottom: 0;
       left: 0;
     }
@@ -166,7 +121,13 @@ General Landing styles
 /* Video section */
 .section--video {
   background-color: #fff;
-  padding: 4vh 0 11vh;
+
+  @include media-tablet-h-mx {
+    padding: 4vh 0 6vh;
+  }
+  @include media-tablet-h-mn {
+    padding: 4vh 0 11vh;
+  }
 
   *::selection {
     background: #fff;
@@ -283,10 +244,11 @@ General Landing styles
     @include media-phone-mn {
       gap: 4vh 3vw;
       grid-template-columns: 1fr 1fr;
-      margin: 0 auto 9vh;
+      margin: 0 auto 5vh;
     }
     @include media-tablet-h-mn {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 0 auto 9vh;
     }
   }
 
@@ -312,19 +274,11 @@ General Landing styles
         height: 100px;
         width: 100px;
         margin: 0 auto 2vh;
-
-        //IMG {
-        //  max-width: 55%;
-        //}
       }
       @include media-phablet-mn {
         height: 175px;
         width: 175px;
         margin: 0 auto 3vh;
-
-        //IMG {
-        //  max-width: 96px;
-        //}
       }
     }
 
@@ -377,8 +331,11 @@ General Landing styles
     }
 
     IMG {
+      box-sizing: border-box;
       height: auto;
-      max-width: 100%;
+      max-width: fit-content;
+      vertical-align: middle;
+      width: 100%;
     }
   }
 }
@@ -396,6 +353,10 @@ General Landing styles
   }
 
   @include media-phone-mn {
+    padding-top: 7vh;
+  }
+
+  @include media-tablet-h-mn {
     padding-top: 11vh;
   }
 
@@ -415,11 +376,11 @@ General Landing styles
   }
 
   .choisissez-haut {
-    @include media-phone-mx {
+    @include media-phablet-mx {
       display: none;
     }
 
-    @include media-phone-mn {
+    @include media-phablet-mn {
       background: url("../img/bg-choisissez-vertuo-pop-red-min.png") no-repeat;
       background-size: 100%;
       height: 100%;
@@ -470,10 +431,15 @@ General Landing styles
     }
 
     IMG {
-      width: 100%;
 
       @include media-netbook-mx {
         margin-bottom: 10px;
+      }
+      @include media-phone-mx {
+        width: 100%;
+      }
+      @include media-phone-mn {
+        max-width: 100%;
       }
       @include media-netbook-mn {
         margin-bottom: 24px;

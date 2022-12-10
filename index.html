@@ -9,18 +9,19 @@
 	<meta name=msapplication-TileColor content=#4632ff>
 	<link rel=profile href=http://microformats.org/profile/hcard>
 	<!-- Favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="site.webmanifest">
-	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+	<link rel=apple-touch-icon sizes=180x180 href=favicon/apple-touch-icon.png>
+	<link rel=icon type=image/png sizes=32x32 href=favicon/favicon-32x32.png>
+	<link rel=icon type=image/png sizes=16x16 href=favicon/favicon-16x16.png>
+	<link rel=manifest href=site.webmanifest>
+	<link rel=mask-icon href=favicon/safari-pinned-tab.svg color=#5bbad5>
+	<meta name=msapplication-TileColor content=#da532c>
+	<meta name=theme-color content=#ffffff>
 	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel=preconnect href=https://fonts.googleapis.com>
+	<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+	<link href=https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap rel=stylesheet>
 	<!-- CSS styles -->
+<!--	<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1 crossorigin=anonymous>-->
 	<link rel=stylesheet href=css/normalize.css>
 	<link rel=stylesheet href=css/style.css>
 	<link rel=stylesheet href=css/p-index.css>
@@ -36,7 +37,10 @@
 	<section class="section section--top">
 		<h1>VERTUO POP</h1>
 		<p>Le Café fait sa révolution <span class=nowrap>en couleurs</span></p>
-		<img src="./img/bg-top-min.jpg" alt="">
+		<picture>
+			<source srcset=img/bg-top-min.jpg media="(min-width: 769px)">
+			<img src=img/bg-top-m-min.jpg alt="">
+		</picture>
 	</section><!-- end top section -->
 
 	<section class="section section--video">
@@ -99,18 +103,9 @@
 		</div>
 
 		<div class=couleurs>
-			<picture>
-				<source srcset=img/bg-pop-bleu-min.jpg media="(min-width: 500px)">
-				<img src=img/bg-pop-bleu-min.jpg alt="Nespresso Vertuo Pop bleu">
-			</picture>
-			<picture>
-				<source srcset=img/bg-pop-rouge-min.jpg media="(min-width: 500px)">
-				<img src=img/bg-pop-rouge-min.jpg alt="Nespresso Vertuo Pop rouge">
-			</picture>
-			<picture>
-				<source srcset=img/bg-pop-jaune-min.jpg media="(min-width: 500px)">
-				<img src=img/bg-pop-jaune-min.jpg alt="Nespresso Vertuo Pop jaune">
-			</picture>
+			<img src=img/bg-pop-bleu-min.jpg alt="Nespresso Vertuo Pop bleu">
+			<img src=img/bg-pop-rouge-min.jpg alt="Nespresso Vertuo Pop rouge">
+			<img src=img/bg-pop-jaune-min.jpg alt="Nespresso Vertuo Pop jaune">
 		</div>
 	</section><!-- end icones section -->
 
@@ -122,26 +117,17 @@
 			<div class=choisissez-haut></div>
 			<div class=choisissez-ext>
 				<div class="choisissez choisissez-gauche">
-					<picture>
-						<source srcset=img/bg-choisissez-gauche-min.jpg media="(min-width: 500px)">
-						<img src=img/bg-choisissez-gauche-min.jpg alt="Découvrez vertuo pop">
-					</picture>
+					<img src=img/bg-choisissez-gauche-min.jpg alt="Découvrez vertuo pop">
 					<a class=btn href="#" target=_blank>Découvrez <span class=nowrap>vertuo pop</span></a>
 				</div>
 
 				<div class="choisissez choisissez-centre">
-					<picture>
-						<source srcset=img/bg-choisissez-centre-min.jpg media="(min-width: 500px)">
-						<img src=img/bg-choisissez-centre-min.jpg alt="Commandez vos cafés vertuo">
-					</picture>
+					<img src=img/bg-choisissez-centre-min.jpg alt="Commandez vos cafés vertuo">
 					<a class=btn href="#" target=_blank>Commandez vos <span class=nowrap>cafés vertuo</span></a>
 				</div>
 
 				<div class="choisissez choisissez-droit">
-					<picture>
-						<source srcset=img/bg-choisissez-droit-min.jpg media="(min-width: 500px)">
-						<img src=img/bg-choisissez-droit-min.jpg alt="Recettes exclusives nespresso">
-					</picture>
+					<img src=img/bg-choisissez-droit-min.jpg alt="Recettes exclusives nespresso">
 					<a class=btn href="#" target=_blank>Recettes exclusives nespresso</a>
 				</div>
 			</div>

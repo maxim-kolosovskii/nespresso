@@ -66,22 +66,22 @@ General Landing styles
     color: #000; }
   @media screen and (min-width: 768px) {
     .section--top {
-      min-height: 65vh; } }
+      min-height: 480px; } }
   @media only screen and (min-width: 880px) {
     .section--top {
-      min-height: 70vh; } }
+      min-height: 530px; } }
   @media screen and (min-width: 992px) {
     .section--top {
-      min-height: 80vh; } }
+      min-height: 620px; } }
   @media only screen and (min-width: 1150px) {
     .section--top {
-      min-height: 88vh; } }
+      min-height: 660px; } }
   @media screen and (min-width: 1200px) {
     .section--top {
-      min-height: 96vh; } }
+      min-height: 730px; } }
   @media screen and (min-width: 1400px) {
     .section--top {
-      min-height: 98vh; } }
+      min-height: 787px; } }
   .section--top h1 {
     font-size: 2.286rem;
     font-weight: 600;
@@ -109,7 +109,9 @@ General Landing styles
       .section--top p {
         letter-spacing: 0.2em; } }
   .section--top IMG {
-    max-width: 100%; }
+    box-sizing: border-box;
+    max-width: 100%;
+    vertical-align: middle; }
     @media screen and (min-width: 768px) {
       .section--top IMG {
         position: absolute;
@@ -118,8 +120,13 @@ General Landing styles
 
 /* Video section */
 .section--video {
-  background-color: #fff;
-  padding: 4vh 0 11vh; }
+  background-color: #fff; }
+  @media screen and (max-width: 1023px) {
+    .section--video {
+      padding: 4vh 0 6vh; } }
+  @media screen and (min-width: 1024px) {
+    .section--video {
+      padding: 4vh 0 11vh; } }
   .section--video *::selection {
     background: #fff;
     color: #80b1db; }
@@ -220,10 +227,11 @@ General Landing styles
       .section--icones .icones {
         gap: 4vh 3vw;
         grid-template-columns: 1fr 1fr;
-        margin: 0 auto 9vh; } }
+        margin: 0 auto 5vh; } }
     @media screen and (min-width: 1024px) {
       .section--icones .icones {
-        grid-template-columns: 1fr 1fr 1fr 1fr; } }
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 auto 9vh; } }
   .section--icones .icones-item {
     display: flex;
     flex-direction: column; }
@@ -277,8 +285,11 @@ General Landing styles
     .section--icones .couleurs {
       display: flex; } }
   .section--icones .couleurs IMG {
+    box-sizing: border-box;
     height: auto;
-    max-width: 100%; }
+    max-width: fit-content;
+    vertical-align: middle;
+    width: 100%; }
 
 /* Choisissez section */
 .section--choisissez {
@@ -288,6 +299,9 @@ General Landing styles
     background: #fff;
     color: #000; }
   @media screen and (min-width: 576px) {
+    .section--choisissez {
+      padding-top: 7vh; } }
+  @media screen and (min-width: 1024px) {
     .section--choisissez {
       padding-top: 11vh; } }
   .section--choisissez .section__title {
@@ -300,10 +314,10 @@ General Landing styles
     @media screen and (min-width: 1200px) {
       .section--choisissez .container {
         padding: 0; } }
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 767px) {
     .section--choisissez .choisissez-haut {
       display: none; } }
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 768px) {
     .section--choisissez .choisissez-haut {
       background: url("../img/bg-choisissez-vertuo-pop-red-min.png") no-repeat;
       background-size: 100%;
@@ -340,11 +354,15 @@ General Landing styles
     @media screen and (max-width: 374px) {
       .section--choisissez .choisissez .btn {
         min-width: 100%; } }
-    .section--choisissez .choisissez IMG {
-      width: 100%; }
-      @media screen and (max-width: 1199px) {
-        .section--choisissez .choisissez IMG {
-          margin-bottom: 10px; } }
-      @media screen and (min-width: 1200px) {
-        .section--choisissez .choisissez IMG {
-          margin-bottom: 24px; } }
+    @media screen and (max-width: 1199px) {
+      .section--choisissez .choisissez IMG {
+        margin-bottom: 10px; } }
+    @media screen and (max-width: 575px) {
+      .section--choisissez .choisissez IMG {
+        width: 100%; } }
+    @media screen and (min-width: 576px) {
+      .section--choisissez .choisissez IMG {
+        max-width: 100%; } }
+    @media screen and (min-width: 1200px) {
+      .section--choisissez .choisissez IMG {
+        margin-bottom: 24px; } }
