@@ -1,0 +1,86 @@
+/*
+Header elements
+*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto auto;
+  max-width: 1440px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  transition: all $transition-duration $transition-timing-function;
+
+  // Animation
+  animation-delay: .15s !important;
+  background-color: #fff;
+  -webkit-animation: changeColor 1s ease-in-out both;
+  animation: changeColor 1s ease-in-out both;
+
+  .logo {
+    display: block;
+    position: relative;
+
+    // Animation
+    opacity: 0;
+    transition: all $transition-duration $transition-timing-function;
+
+    @include media-phone-mx {
+      margin: 1vh 0;
+    }
+    @include media-phone-mn {
+      margin: 0 1.25vw;
+    }
+  }
+
+  .logo--conseils {
+    @include media-phablet-mx {
+      max-width: 165px;
+    }
+    @include media-phablet-mn {
+      max-width: 219px;
+    }
+
+    // Animation
+    @include media-small-mx {
+      -webkit-animation: slideTop .5s cubic-bezier(0.25, 0.45, 0.45, 0.94) both;
+      animation: slideTop .5s cubic-bezier(0.25, 0.45, 0.45, 0.95) both;
+    }
+    @include media-small-mn {
+      -webkit-animation: slideLeft .5s cubic-bezier(0.25, 0.45, 0.45, 0.94) both;
+      animation: slideLeft .5s cubic-bezier(0.25, 0.45, 0.45, 0.95) both;
+    }
+  }
+
+  .logo--nespresso {
+    background-color: #fff;
+
+    @include media-phablet-mx {
+      max-width: 60px;
+      padding: 10px;
+    }
+    @include media-phablet-mn {
+      height: 110px;
+      width: 110px;
+      padding: 18px;
+    }
+
+    // Animation
+    @include media-small-mx {
+      -webkit-animation: slideTop .5s cubic-bezier(0.25, 0.45, 0.45, 0.94) both;
+      animation: slideTop .5s cubic-bezier(0.25, 0.45, 0.45, 0.95) both;
+    }
+    @include media-small-mn {
+      -webkit-animation: slideRight .5s $transition-timing-function both;
+      animation: slideRight .5s $transition-timing-function both;
+    }
+  }
+}
+
+

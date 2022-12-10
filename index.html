@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+	<meta charset=UTF-8>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nespresso Vertuo Pop</title>
+	<meta name=description content="Page d'accueil de Nespresso Vertuo Pop">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name=msapplication-TileColor content=#4632ff>
+	<link rel=profile href=http://microformats.org/profile/hcard>
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+	<!-- CSS styles -->
+	<link rel=stylesheet href=css/normalize.css>
+	<link rel=stylesheet href=css/style.css>
+	<link rel=stylesheet href=css/p-index.css>
+</head>
+
+<body>
+<header class=header>
+	<img class="logo logo--conseils" src=img/logo-conseils-conso.svg alt="Conseils Conso">
+	<img class="logo logo--nespresso" src=img/logo-nespresso.svg alt=Nespresso>
+</header>
+
+<main class=main>
+	<section class="section section--top">
+		<h1>VERTUO POP</h1>
+		<p>Le Café fait sa révolution <span class=nowrap>en couleurs</span></p>
+		<img src="./img/bg-top-min.jpg" alt="">
+	</section><!-- end top section -->
+
+	<section class="section section--video">
+		<h1 class=section__title>Vertuo <span class=nowrap>POP :</span> <br>petite <span class=nowrap>machine,</span> <span class=nowrap>grand café</span></h1>
+
+		<div class=container-2>
+			<div class=video-outer>
+				<button class=video-controls onclick="playPause()"></button>
+				<video id=video1 class=video preload=auto poster=img/bg-video-min.jpg onended="theEnd()">
+					<source src=./video/_WRAP_Motion_Nespresso_V4_640x640_compress.mp4 type=video/mp4>
+					<source src=./video/_WRAP_Motion_Nespresso_V4_640x640_compress.webm type=video/webm>
+				</video>
+			</div>
+
+			<div class="list-outer">
+				<ul>
+					<li>Design compact et élégant</li>
+					<li>Technologie Centrifusion<sup>TM</sup></li>
+					<li>Une simple touche</li>
+					<li>La qualité de café Nespresso dans 4 tailles de tasses</li>
+					<li>Large variété de café</li>
+				</ul>
+				<a class=btn href="#" target=_blank>Découvrez-la</a>
+			</div>
+		</div>
+	</section><!-- end video section -->
+
+	<section class="section section--icones">
+		<div class=container>
+			<div class=icones>
+				<div class=icones-item>
+					<div>
+						<img src=img/bg-icones-design.svg alt="">
+					</div>
+					<h2>Design<br><span>-</span></h2>
+					<p>Compact <span class=nowrap>et coloré</span></p>
+				</div>
+				<div class=icones-item>
+					<div>
+						<img src=img/bg-icones-machine-pop-min.png alt="Machine Pop">
+					</div>
+					<h2>Vertuo<br><span>-</span></h2>
+					<p>Technologie <span class=nowrap>de Centrifusion<sup>TM</sup></span></p>
+				</div>
+				<div class=icones-item>
+					<div>
+						<img src=img/bg-icones-tasses-min.png alt="Tasses">
+					</div>
+					<h2>4 tailles <span class=nowrap>de tasses</span><br><span>-</span></h2>
+					<p>de l’espresso <span class=nowrap>(40 ml)</span> <br>au mug (230 ml)</p>
+				</div>
+				<div class=icones-item>
+					<div>
+						<img src=img/bg-icones-on-off-min.png alt="On/Off">
+					</div>
+					<h2>Eco-responsable<br><span>-</span></h2>
+					<p>35% de plastique recyclé <br>et arrêt automatique</p>
+				</div>
+			</div>
+		</div>
+
+		<div class=couleurs>
+			<picture>
+				<source srcset=img/bg-pop-bleu-min.jpg media="(min-width: 500px)">
+				<img src=img/bg-pop-bleu-min.jpg alt="Nespresso Vertuo Pop bleu">
+			</picture>
+			<picture>
+				<source srcset=img/bg-pop-rouge-min.jpg media="(min-width: 500px)">
+				<img src=img/bg-pop-rouge-min.jpg alt="Nespresso Vertuo Pop rouge">
+			</picture>
+			<picture>
+				<source srcset=img/bg-pop-jaune-min.jpg media="(min-width: 500px)">
+				<img src=img/bg-pop-jaune-min.jpg alt="Nespresso Vertuo Pop jaune">
+			</picture>
+		</div>
+	</section><!-- end icones section -->
+
+	<section class="section section--choisissez">
+		<h1 class=section__title>Choisissez votre <span class=nowrap>machine vertuo</span></h1>
+
+		<div class=container>
+			<a class="btn btn--jaune" href="#" target=_blank>Découvrez la <span class=nowrap>gamme vertuo</span></a>
+			<div class=choisissez-haut></div>
+			<div class=choisissez-ext>
+				<div class="choisissez choisissez-gauche">
+					<picture>
+						<source srcset=img/bg-choisissez-gauche-min.jpg media="(min-width: 500px)">
+						<img src=img/bg-choisissez-gauche-min.jpg alt="Découvrez vertuo pop">
+					</picture>
+					<a class=btn href="#" target=_blank>Découvrez <span class=nowrap>vertuo pop</span></a>
+				</div>
+
+				<div class="choisissez choisissez-centre">
+					<picture>
+						<source srcset=img/bg-choisissez-centre-min.jpg media="(min-width: 500px)">
+						<img src=img/bg-choisissez-centre-min.jpg alt="Commandez vos cafés vertuo">
+					</picture>
+					<a class=btn href="#" target=_blank>Commandez vos <span class=nowrap>cafés vertuo</span></a>
+				</div>
+
+				<div class="choisissez choisissez-droit">
+					<picture>
+						<source srcset=img/bg-choisissez-droit-min.jpg media="(min-width: 500px)">
+						<img src=img/bg-choisissez-droit-min.jpg alt="Recettes exclusives nespresso">
+					</picture>
+					<a class=btn href="#" target=_blank>Recettes exclusives nespresso</a>
+				</div>
+			</div>
+		</div>
+	</section><!-- end choisissez section -->
+</main>
+
+<footer class=footer>
+	<header class=header>
+		<img class="logo logo--conseils" src=img/logo-conseils-conso.svg alt="Conseils Conso">
+		<img class="logo logo--nespresso" src=img/logo-nespresso.svg alt=Nespresso>
+	</header>
+</footer>
+
+<a id="btn-top" href="#"></a>
+
+<!-- Video Player -->
+<script>
+	var myVideo = document.getElementById("video1");
+
+	function playPause() {
+		if (myVideo.paused)
+			myVideo.play();
+		else
+			myVideo.pause();
+	}
+</script>
+</body>
+</html>

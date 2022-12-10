@@ -1,0 +1,124 @@
+/*
+General layout
+*/
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: var(--font-size-base);
+}
+
+body {
+  background-color: #fff;
+  color: $font-color-base;
+  font: $font-weight-base 1rem/1.25 $font-family-base;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  background-color: $color-coffee;
+  flex: 1;
+  max-width: 1440px;
+  margin: auto;
+  width: 100%;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  transition: max-width $transition-duration $transition-timing-function;
+
+  @media only screen and (max-width: 399px) {
+    padding: 0 25px;
+  }
+    @media only screen and (max-width: 299px) {
+      padding: 0 15px;
+  }
+  @media only screen and (min-width: 400px) {
+    max-width: calc(90% - 50px);
+    width: 100%;
+  }
+  @include media-phone-mn {
+    max-width: calc(80% - 50px);
+    width: 100%;
+  }
+  @include media-phablet-mn {
+    max-width: calc(100% - 12vw);
+  }
+  @include media-tablet-v-mn {
+    max-width: calc(100% - 16vw);
+  }
+  @include media-laptop-mn {
+    max-width: 1240px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-base;
+  font-style: normal;
+  line-height: 1.1;
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all $transition-duration $transition-timing-function;
+
+  &:link,
+  &:visited {}
+
+  a:focus,
+  &:active,
+  &:hover {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+blockquote {
+  margin: 0;
+}
+
+SUP {
+  font-size: .5em;
+}
+
+.nowrap {
+  @include media-small-mn {
+    white-space: nowrap;
+  }
+}
+
+BR {
+  @media screen and (max-width: 240px) {
+    display: none;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.blue {
+  color: $color-green;
+}
