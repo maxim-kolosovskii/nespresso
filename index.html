@@ -45,13 +45,15 @@
 	<section class="section section--video">
 		<h1 class=section__title>Vertuo <span class=nowrap>POP :</span> <br>petite <span class=nowrap>machine,</span> <span class=nowrap>grand café</span></h1>
 
-		<div class=container-2>
-			<div class=video-outer>
-				<button class=video-controls onclick="playPause()"></button>
-				<video id=video1 width=100% height=100% class=video preload=auto poster=img/bg-video-min.jpg onended="theEnd()">
-					<source src=./video/_WRAP_Motion_Nespresso_V4_640x640_compress.mp4 type=video/mp4>
-					<source src=./video/_WRAP_Motion_Nespresso_V4_640x640_compress.webm type=video/webm>
-				</video>
+		<div class=container-video>
+			<div>
+				<div class=video-outer>
+					<button class=video-controls onclick="playPause()"></button>
+					<video id=video1 width=100% height=100% class=video preload=auto poster=img/nesresso-placeholder-video-min.jpg onended="theEnd()">
+						<source src=./video/_WRAP_Motion_Nespresso_V4_640x640_compress.mp4 type=video/mp4>
+						<source src=./video/_WRAP_Motion_Nespresso_V4_640x640_compress.webm type=video/webm>
+					</video>
+				</div>
 			</div>
 
 			<div class="list-outer">

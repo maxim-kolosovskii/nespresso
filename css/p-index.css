@@ -60,8 +60,7 @@ General Landing styles
 .section--top {
   padding: 7vh 0 0;
   text-align: center;
-  z-index: 1;
-  display: none; }
+  z-index: 1; }
   .section--top *::selection {
     background: #fff;
     color: #000; }
@@ -142,23 +141,22 @@ General Landing styles
       .section--video .section__title {
         margin-bottom: 7vh; } }
   @media screen and (max-width: 1199px) {
-    .section--video .container-2 {
+    .section--video .container-video {
       width: 100%;
       max-width: 616px;
       margin: auto; } }
   @media screen and (min-width: 1200px) {
-    .section--video .container-2 {
+    .section--video .container-video {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-left: 6.2vw; } }
-  .section--video .container-2 DIV {
+  .section--video .container-video DIV {
     position: relative;
     text-align: left; }
   .section--video .video-outer {
     max-width: 617px;
-    width: 100%;
-    background: url("img/bg-video-min.jpg") no-repeat; }
+    width: 100%; }
     @media screen and (max-width: 1199px) {
       .section--video .video-outer {
         margin-bottom: 2.5vh; } }
