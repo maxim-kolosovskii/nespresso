@@ -206,6 +206,9 @@ General Landing styles
       line-height: 1.5;
       padding: 5px 0 6px 16px;
       position: relative;
+      @include media-netbook-mn {
+        max-width: 23em;
+      }
 
       &:before {
         content: '';
@@ -330,15 +333,15 @@ General Landing styles
 
   .couleurs {
     @include media-phablet-mn {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
     IMG {
       box-sizing: border-box;
       height: auto;
-      max-width: fit-content;
+      max-width: 100%;
       vertical-align: middle;
-      width: 100%;
     }
   }
 }

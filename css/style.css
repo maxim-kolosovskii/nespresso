@@ -245,7 +245,8 @@ Header elements
       -webkit-animation: slideLeft 0.5s cubic-bezier(0.25, 0.45, 0.45, 0.94) both;
       animation: slideLeft 0.5s cubic-bezier(0.25, 0.45, 0.45, 0.95) both; } }
   .header .logo--nespresso {
-    background-color: #fff; }
+    background-color: #fff;
+    box-sizing: border-box; }
     @media screen and (max-width: 767px) {
       .header .logo--nespresso {
         max-width: 60px;

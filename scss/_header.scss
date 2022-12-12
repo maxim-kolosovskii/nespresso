@@ -60,6 +60,7 @@ Header elements
 
   .logo--nespresso {
     background-color: #fff;
+    box-sizing: border-box;
 
     @include media-phablet-mx {
       max-width: 60px;

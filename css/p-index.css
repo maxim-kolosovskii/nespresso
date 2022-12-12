@@ -181,6 +181,9 @@ General Landing styles
       line-height: 1.5;
       padding: 5px 0 6px 16px;
       position: relative; }
+      @media screen and (min-width: 1200px) {
+        .section--video UL li {
+          max-width: 23em; } }
       .section--video UL li:before {
         content: '';
         background-color: #000;
@@ -283,13 +286,13 @@ General Landing styles
         white-space: nowrap; } }
   @media screen and (min-width: 768px) {
     .section--icones .couleurs {
-      display: flex; } }
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; } }
   .section--icones .couleurs IMG {
     box-sizing: border-box;
     height: auto;
-    max-width: fit-content;
-    vertical-align: middle;
-    width: 100%; }
+    max-width: 100%;
+    vertical-align: middle; }
 
 /* Choisissez section */
 .section--choisissez {
