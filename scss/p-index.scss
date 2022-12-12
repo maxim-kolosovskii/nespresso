@@ -45,6 +45,7 @@ General Landing styles
   padding: 7vh 0 0;
   text-align: center;
   z-index: 1;
+  display: none;
 
   *::selection {
     background: #fff;
@@ -150,11 +151,13 @@ General Landing styles
   .container-2 {
     @include media-netbook-mx {
       width: 100%;
-      max-width: 617px;
+      max-width: 616px;
       margin: auto;
     }
     @include media-netbook-mn {
       display: flex;
+      align-items: center;
+      justify-content: center;
       margin-left: 6.2vw;
     }
 
@@ -167,6 +170,7 @@ General Landing styles
   .video-outer {
     max-width: 617px;
     width: 100%;
+    background: url("img/bg-video-min.jpg") no-repeat;
 
     //&:hover {
     //  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
@@ -431,7 +435,6 @@ General Landing styles
     }
 
     IMG {
-
       @include media-netbook-mx {
         margin-bottom: 10px;
       }

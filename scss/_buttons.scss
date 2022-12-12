@@ -65,7 +65,7 @@ button {
 #btn-top {
   background: url("../img/icon-arrow-slim.svg") #fff 50% no-repeat;
   background-size: 60%;
-  border: .15rem solid #2a6df6;
+  border: .15rem solid #9d47b2;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -77,10 +77,10 @@ button {
   bottom: 3vh;
   right: 2vw;
   z-index: 1000;
-  transition: all $transition-duration-fast $transition-timing-function;
+  //transition: all $transition-duration-fast $transition-timing-function;
 
   &:hover {
-    background-color: #2a6df6;
+    background-color: #9d47b2;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMyAyMyI+PHBhdGggZD0ibTIyLjUgNy44LTIuNC0yLjQtOC42IDguOC04LjYtOC44TC41IDcuOGwxMSAxMS4yeiIgc3R5bGU9ImZpbGw6I2ZmZiIvPjwvc3ZnPg==");
   }
 }

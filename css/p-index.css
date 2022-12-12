@@ -60,7 +60,8 @@ General Landing styles
 .section--top {
   padding: 7vh 0 0;
   text-align: center;
-  z-index: 1; }
+  z-index: 1;
+  display: none; }
   .section--top *::selection {
     background: #fff;
     color: #000; }
@@ -143,18 +144,21 @@ General Landing styles
   @media screen and (max-width: 1199px) {
     .section--video .container-2 {
       width: 100%;
-      max-width: 617px;
+      max-width: 616px;
       margin: auto; } }
   @media screen and (min-width: 1200px) {
     .section--video .container-2 {
       display: flex;
+      align-items: center;
+      justify-content: center;
       margin-left: 6.2vw; } }
   .section--video .container-2 DIV {
     position: relative;
     text-align: left; }
   .section--video .video-outer {
     max-width: 617px;
-    width: 100%; }
+    width: 100%;
+    background: url("img/bg-video-min.jpg") no-repeat; }
     @media screen and (max-width: 1199px) {
       .section--video .video-outer {
         margin-bottom: 2.5vh; } }
@@ -200,13 +204,11 @@ General Landing styles
   left: 0;
   z-index: 1;
   width: 100%; }
+  .video-controls:hover {
+    border-radius: 0; }
 
 .video {
   max-width: 100%; }
-  @media screen and (min-width: 618px) {
-    .video {
-      position: absolute;
-      top: -30%; } }
 
 /* Icônes section */
 .section--icones {
